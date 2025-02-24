@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة العملات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حاسبة العملات</h1>
+        <select id="fromCurrency"></select>
+        <select id="toCurrency"></select>
+        <input type="number" id="amount" placeholder="أدخل المبلغ">
+        <button onclick="convertCurrency()">تحويل</button>
+        <div id="result"></div>
+        <div id="liveRates">
+            <div id="usdToTry"></div>
+            <div id="tryToSyp"></div>
+            <div id="sypToUsd"></div>
+        </div>
+    </div>
+    
+    <div class="m">
+      <p>المبرمج : محمد مسلم</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* تنسيق الجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* تنسيق العنوان */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* تنسيق الصناديق */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الأزرار */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* يجعل الزر يأخذ عرض كامل */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* تنسيق القوائم المنسدلة */
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* تنسيق خانة إدخال المبلغ */
+#amount {
+    width: 100%; /* عرض كامل */
+    padding: 12px; /* مساحة داخلية أكبر */
+    margin: 10px 0; /* هوامش */
+    border-radius: 5px; /* زوايا دائرية */
+    border: 2px solid #4CAF50; /* حدود بلون الزر */
+    font-size: 16px; /* حجم خط أكبر */
+    transition: border-color 0.3s ease; /* تأثير انتقال على اللون */
+}
+
+/* تأثير عند التركيز على خانة الإدخال */
+#amount:focus {
+    border-color: #45a049; /* تغيير لون الحدود عند التركيز */
+    outline: none; /* إزالة خط التركيز الافتراضي */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* إضافة ظل عند التركيز */
+}
+
+/* تحسينات عند وضع بيانات غير صحيحة */
+#amount:invalid {
+    border-color: red; /* حدود حمراء عند إدخال بيانات غير صحيحة */
+}
+
+/* تنسيق النصوص الناتجة */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* تنسيق أسعار الصرف */
+#liveRates div {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#liveRates div:hover {
+    transform: scale(1.05);
+}
+
+/* تحسينات متجاوبة */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* تقليل حجم الخط للعناوين */
+    }
+
+    button {
+        padding: 8px 0; /* تقليل padding */
+    }
+
+    #result {
+        font-size: 16px; /* تقليل حجم الخط للنتيجة */
+    }
+
+    #amount {
+        font-size: 14px; /* تقليل حجم خط خانة المبلغ */
+    }
+}
+
